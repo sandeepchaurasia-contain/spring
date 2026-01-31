@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="spring.Student">
+
+        <property name="subjects">
+            <list>
+                <value>Java</value>
+                <value>Spring</value>
+                <value>Hibernate</value>
+            </list>
+        </property>
+
+        <property name="skills">
+            <set>
+                <value>Problem Solving</value>
+                <value>Debugging</value>
+            </set>
+        </property>
+
+        <property name="marks">
+            <map>
+                <entry key="Java" value="85"/>
+                <entry key="Spring" value="90"/>
+            </map>
+        </property>
+
+    </bean>
+
+</beans>
